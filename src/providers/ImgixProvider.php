@@ -50,7 +50,7 @@ class ImgixProvider extends AbstractProvider
         // Is the asset in a Servd filesystem?
         if ( ! is_string($asset) && $asset instanceof Asset) {
             $volume = $asset->getVolume();
-            if ($volume::class === 'servd\AssetStorage\Volume') {
+            if (get_class($volume) === 'servd\AssetStorage\Volume') {
                 $servdSettings = \servd\AssetStorage\Plugin::$plugin->getSettings();
                 $v3 = false;
                 if (isset($servdSettings::$CURRENT_TYPE) && $servdSettings::$CURRENT_TYPE === 'wasabi') { // wasabi is v3
