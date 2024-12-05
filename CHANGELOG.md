@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.1.1 - 2024.12.05
+### Fixed
+- Restored PHP 7.x support.
+
 ## 1.1.0 - 2024.07.16
 ### Added
 - Backported support for Servd Assets Platform v3. If you are running a Craft 3 site on Servd, use Servd’s Asset Volumes, and want to upgrade from Servd’s Assets Platform v2 to v3, ensure all environments are updated to this version of Imgixer before initiating the asset platform upgrade.
